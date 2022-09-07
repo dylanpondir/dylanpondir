@@ -1,0 +1,44 @@
+{
+  "git.autofetch": true,
+  "yaml.schemas": {
+    "file:///Users/dylanpondir/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "redhat.telemetry.enabled": false,
+  "atlascode.bitbucket.enabled": true,
+  "atlascode.jira.enabled": false,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "eslint.run": "onSave",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.codeLens": true,
+  "eslint.packageManager": "yarn",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.resolveGlobalModules": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "editor.wordWrap": "on",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggest.preview": false,
+  "javascript.preferences.importModuleSpecifierEnding": "minimal",
+  "typescript.preferences.importModuleSpecifierEnding": "minimal",
+  "typescript.preferences.includePackageJsonAutoImports": "on"
+}
