@@ -3,14 +3,14 @@ import { SectionAnimation } from '../../lib/animations';
 
 export default function AnimatedSection({
   children,
-  ref,
+  forwardRef,
 }: {
   children: React.ReactNode;
-  ref?: React.RefObject<HTMLDivElement>;
+  forwardRef?: React.RefObject<HTMLDivElement>;
 }) {
   return (
     <motion.div
-      ref={ref}
+      ref={forwardRef}
       className='min-h-screen w-full flex justify-center items-center'
       variants={SectionAnimation}
     >
