@@ -17,9 +17,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <main className='bg-black font-sans mx-auto w-full'>
-        <div className=' h-screen w-full p-0 fixed' />
-
+      <main className='bg-black font-sans mx-auto w-full px-4'>
+        <div className='h-screen w-full p-0 fixed' />
         <motion.div
           className='fixed top-0 left-0 right-0 h-2 bg-saffron'
           style={{ scaleX }}

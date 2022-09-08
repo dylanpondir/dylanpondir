@@ -65,18 +65,22 @@ export default function Home() {
   const { scrollYProgress: scrollSectionOne } = useScroll({
     container: section_one_ref,
   });
-  const yPosAnim = useTransform(scrollSectionOne, [0, 0.2, 0.3], [0, 75, 100]);
+  const yRotateYSectionOne = useTransform(
+    scrollSectionOne,
+    [0, 0.2, 0.3, 1],
+    [0, 75, 100, 0]
+  );
   const yHeaderPosAnim = useTransform(
     scrollSectionOne,
-    [0, 0.5, 0.7],
-    [0, 50, 100]
+    [0, 0.5, 0.7, 1],
+    [0, 50, 100, 0]
   );
   const yPosOpacity = useTransform(
     scrollSectionOne,
     [0, 0.2, 0.3],
     [1, 0.6, 0]
   );
-  const yPosScale = useTransform(scrollSectionOne, [0, 0.5, 0.7], [1, 2, 10]);
+  const yPosScale = useTransform(scrollSectionOne, [0, 0.5, 1], [1, 2, 0]);
 
   // Section two animation
   const { scrollYProgress: scrollSectionTwo } = useScroll({
@@ -112,7 +116,6 @@ export default function Home() {
         <>
           <AnimatedSection ref={section_one_ref}>
             <motion.div
-
               style={{
                 opacity: yPosOpacity,
                 rotateY: yHeaderPosAnim,
@@ -126,7 +129,7 @@ export default function Home() {
                   </span>
                 </AnimatedChild>
                 <AnimatedChild>
-                  <span className='text-xl md:text-2xl font-thin text-white'>
+                  <span className='text-xl md:text-2xl font-thin text-white '>
                     Entrepreneur,{' '}
                     <span className='text-saffron'>
                       <a
@@ -144,7 +147,7 @@ export default function Home() {
               </AnimatedParent>
             </motion.div>
             <motion.div
-              style={{ rotateY: yPosAnim, opacity: yPosOpacity }}
+              style={{ rotateY: yRotateYSectionOne, opacity: yPosOpacity }}
               className='flex w-full fixed bottom-8 justify-center items-center'
             >
               <div className='font-bold text-gray-200'>
@@ -165,7 +168,9 @@ export default function Home() {
               }}
             >
               <AnimatedParent>
-                <Social />
+                <AnimatedChild classNames='mb-2'>
+                  <Social />
+                </AnimatedChild>
               </AnimatedParent>
             </motion.div>
           </AnimatedSection>
