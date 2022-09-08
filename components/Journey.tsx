@@ -2,7 +2,10 @@ export default function Journey() {
   return (
     <>
       <p className='text-sm'>
-        My love for entreprenuership began in 2004. I was an avid baseball card collector and wanted to trade my cards online. I needed to build a website, so I bought a book on HTML and learned to code. I built my site and started making trades. I was hooked.
+        My love for entreprenuership began in 2004. I was an avid baseball card
+        collector and wanted to trade my cards online. I needed to build a
+        website, so I bought a book on HTML and learned to code. I built my site
+        and started making trades. I was hooked.
       </p>
       <ul role='list' className='-mb-8'>
         <li>
@@ -112,7 +115,7 @@ export default function Journey() {
             <div>
               <p className='text-sm text-gray-500'>
                 Sold Upstart Epoxy to a Private Equity Firm and began the
-                development of Pondir's software branch
+                development of Pondir&apos;s software branch
               </p>
             </div>
             <div className='whitespace-nowrap text-right text-sm text-gray-500'>
