@@ -33,8 +33,8 @@ export default function SectionOne() {
     <>
       <div className='fixed h-96 flex w-full justify-center z-20'>
         <motion.div
-          initial={{ y: '-100vh' }}
-          animate={{ y: 0 }}
+          initial={{ opacity: 0, y: '-100vh' }}
+          animate={{opacity: 1, y: 0 }}
           transition={{
             duration: 1,
             type: 'spring',
