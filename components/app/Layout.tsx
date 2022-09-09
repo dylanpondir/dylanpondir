@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <main className='bg-black font-sans mx-auto w-full px-4'>
         <motion.div
-          className='fixed top-0 left-0 right-0 h-2 bg-saffron z-30'
+          className='fixed top-0 left-0 right-0 h-2 bg-saffron z-30 '
           style={{ scaleX }}
         />
 
