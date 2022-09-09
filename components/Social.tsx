@@ -46,7 +46,7 @@ export default function Social() {
                 {link.label}
               </a>
             </Link>
-            <p className='text-gray-500'>{link.description}</p>
+            <p className='text-gray-300'>{link.description}</p>
           </motion.li>
         ))}
       </motion.ul>

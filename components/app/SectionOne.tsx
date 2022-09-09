@@ -30,7 +30,7 @@ export default function SectionOne() {
   const yPosScale = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
 
   return (
-    <section>
+    <>
       <div className='fixed h-96 flex w-full justify-center z-20'>
         <motion.div
           initial={{ y: '-100vh' }}
@@ -95,6 +95,6 @@ export default function SectionOne() {
           </div>
         </motion.div>
       </div>
-    </section>
+    </>
   );
 }
