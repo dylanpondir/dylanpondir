@@ -18,7 +18,7 @@ export default function Home() {
           <SectionTwo />
       </Layout>
       <footer
-        className='flex fixed bottom-0 left-0 right-0 w-full h-16 bg-black text-white text-center text-xs md:text-sm'
+        className='flex bottom-0 left-0 right-0 w-full h-16 bg-black text-white text-center text-xs md:text-sm'
       >
         <div className='flex justify-center items-center w-full'>
           Copyright © {new Date().getFullYear()} Dylan Pondir. All rights reserved.
