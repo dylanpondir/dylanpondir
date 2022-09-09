@@ -31,7 +31,7 @@ export default function SectionOne() {
 
   return (
     <>
-      <div className='fixed flex w-full justify-center z-20'>
+      <div className='fixed h-96 flex w-full justify-center z-20'>
         <motion.div
           initial={{ opacity: 0, y: '-100vh' }}
           animate={{opacity: 1, y: 0 }}
